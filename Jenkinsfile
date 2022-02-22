@@ -1,5 +1,6 @@
 node {
   stage('SCM') {
+      credentialId 'lucasfreitas242'
     git 'https://github.com/lucasfreitas242/sonarqube_docker'
   }
   stage('SonarQube analysis') {
