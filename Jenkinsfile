@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node("master") {
 
 	try {	         
@@ -28,3 +29,24 @@ node("master") {
     }
 
 }        
+=======
+pipeline {
+  agent {
+    docker {
+      image 'sonarsource/sonar-scanner-cli'
+    }
+
+  }
+  stages {
+    stage('Sonar Scanner') {
+      steps {
+        withSonarQubeEnv('Sonar') {
+          waitForQualityGate true
+        }
+
+      }
+    }
+
+  }
+}
+>>>>>>> a8a3475a6e10f6473802568796f6fddb4677b3e4
