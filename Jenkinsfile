@@ -1,6 +1,4 @@
-node("master") {
-
-	try {	         
+node("master") {         
 
 
 		stage('SCM') {
@@ -24,7 +22,5 @@ node("master") {
 			}
 
 		}
-
-    }
 
 }        
