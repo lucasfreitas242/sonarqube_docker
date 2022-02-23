@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'sonarqube:8.9.7-community' } }
+    agent { docker { image 'sonarsource/sonar-scanner-cli' } }
     stages {
         stage('build') {
             steps {
-                sh 'node --version'
+                sh 'hello world'
             }
         }
     }
