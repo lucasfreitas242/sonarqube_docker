@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git') {
             git branch: 'master',
-            url: https://github.com/lucasfreitas242/sonarqube_docker
+            url: 'https://github.com/lucasfreitas242/sonarqube_docker'
         }
         stage('Maven') {
             sh 'mvn clean package'
