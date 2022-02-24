@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git') {
             steps{
-                credentialsId: 'jenkins'
+                credentialsId: 'jenkins',
                 git branch: 'master',
                 url: 'https://github.com/lucasfreitas242/sonarqube_docker'
             }
