@@ -8,11 +8,6 @@ pipeline {
                 url: 'https://github.com/lucasfreitas242/sonarqube_docker'
             }
         }
-        stage('Maven') {
-            steps{
-                sh 'mvn clean package'
-            }
-        }
         stage('SonarQube') {
             steps{
                 withSonarQubeEnv('sunarqube') {
