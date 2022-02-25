@@ -16,6 +16,10 @@ if(false) {
 
 jin = false;
 
+array.forEach(element => {
+    
+});
+
 
 
 function doOperation(operator, value1, value2) {
