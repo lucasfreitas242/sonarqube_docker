@@ -14,6 +14,8 @@ if(false) {
     return 12;
 }
 
+jin = false;
+
 
 
 function doOperation(operator, value1, value2) {
