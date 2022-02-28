@@ -11,10 +11,6 @@ name: Main Workflow
 jobs:
   sonarqube:
     runs-on: ubuntu-latest
-    services: 
-      service-name-1: 
-        ports: 
-          - 9000:9000
     steps:
     - uses: actions/checkout@v2
       with:
