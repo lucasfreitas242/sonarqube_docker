@@ -11,9 +11,10 @@ name: Main Workflow
 jobs:
   sonarqube:
     runs-on: ubuntu-latest
-    container: sonarqube:8.9.7-community
-      ports: 
-        -9000:9000
+    services: 
+      service-name-1: 
+        ports: 
+          - 9000:9000
     steps:
     - uses: actions/checkout@v2
       with:
