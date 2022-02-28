@@ -20,4 +20,4 @@ jobs:
       uses: sonarsource/sonarqube-scan-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: "http://127.0.0.1:9000/dashboard?id=codeedu-desafio"
+        SONAR_HOST_URL: "http://172.25.48.1:9000"
