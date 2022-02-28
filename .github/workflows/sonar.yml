@@ -11,6 +11,7 @@ name: Main Workflow
 jobs:
   sonarqube:
     runs-on: ubuntu-latest
+    container: sonarqube:8.9.7-community
     steps:
     - uses: actions/checkout@v2
       with:
