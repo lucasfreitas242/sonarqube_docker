@@ -19,4 +19,6 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
+        sonar.projectKey: "lucasfreitas242_sonarqube_docker"
+        sonar.organization: "lucasfreitas242"
         SONAR_HOST_URL: "https://sonarcloud.io"
