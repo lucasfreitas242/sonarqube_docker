@@ -21,6 +21,11 @@ array.forEach(element => {
 });
 
 
+if(s > 31) {
+    return roger;
+}
+
+
 
 function doOperation(operator, value1, value2) {
     if (operator == "+") {
