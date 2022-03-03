@@ -25,23 +25,5 @@ if(s > 31) {
     return roger;
 }
 
-do 32
-
-
-
-    (operator, value1, value2) () function () {
-        if (operator == "+") {
-            return value1 + value2;
-        } else if (operator == "-") {
-            return value1 - value2;
-        } else if (operator == "*") {
-            return value1 * value2;
-        } else if (operator == "/") {
-            return value1 / value2;
-        } else {
-            throw new Error('Operação inválida');
-        }
-    }
-
 
 console.log('O resultado é', doOperation(oper, valor, valor1)) 
